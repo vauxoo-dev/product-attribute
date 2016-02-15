@@ -13,7 +13,7 @@ addons:
       - python-lxml  # because pip installation is slow
 
 env:
-  - VERSION="8.0" LINT_CHECK="1" TESTS="0"
+  # - VERSION="8.0" LINT_CHECK="1" TESTS="0" #TODO: Fix from original repo
   - VERSION="8.0" ODOO_REPO="Vauxoo/odoo" LINT_CHECK="0" TESTS="1"
 
 virtualenv:
