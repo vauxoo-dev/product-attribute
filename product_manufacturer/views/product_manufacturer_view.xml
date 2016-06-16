@@ -11,10 +11,20 @@
                     <group string="Manufacturer">
                         <field name="manufacturer" context="{'default_supplier':True, 'default_customer':False}"/>
                         <field name="manufacturer_pname"/>
-                        <field name="manufacturer_pref"/>
                         <field name="manufacturer_purl" widget="url"/>
                     </group>
                 </group>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="product_product_manufacturer_form_view">
+            <field name="name">product.product.manufacturer.form</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product_template_manufacturer_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='manufacturer_pname']" position="after">
+                    <field name="manufacturer_pref"/>
+                </xpath>
             </field>
         </record>
 
