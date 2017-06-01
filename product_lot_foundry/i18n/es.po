@@ -8,14 +8,17 @@ msgstr ""
 "Project-Id-Version: openobject-addons\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2009-11-25 13:31+0000\n"
-"PO-Revision-Date: 2014-03-11 12:46+0000\n"
-"Last-Translator: Graeme Gellatly <Unknown>\n"
-"Language-Team: Spanish <es@li.org>\n"
+"PO-Revision-Date: 2017-05-22 13:09+0000\n"
+"Last-Translator: Germana <germanaoliveirab@gmail.com>\n"
+"Language-Team: Spanish <http://weblate.vauxoo.com/projects"
+"/github_com_Vauxoo_product-attribute_8_0_/product_lot_foundry/es/>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.12\n"
 "X-Launchpad-Export-Date: 2014-05-17 07:08+0000\n"
-"X-Generator: Launchpad (build 17007)\n"
 
 #. module: product_lot_foundry
 #: field:stock.production.lot.all,lot_id:0
@@ -26,7 +29,7 @@ msgstr "Lote"
 #. module: product_lot_foundry
 #: view:sale.order:0
 msgid "Lots Assignations"
-msgstr ""
+msgstr "Asignaciones de Lotes"
 
 #. module: product_lot_foundry
 #: view:product.product:0
@@ -35,8 +38,9 @@ msgstr "Dimensiones"
 
 #. module: product_lot_foundry
 #: model:product.template,name:product_lot_foundry.product_product_ampco21_product_template
+#, fuzzy
 msgid "AMPCO21 plate"
-msgstr ""
+msgstr "placa AMPCO21"
 
 #. module: product_lot_foundry
 #: model:ir.actions.act_window,name:product_lot_foundry.act_production_product
@@ -59,13 +63,14 @@ msgstr "Error! No puede crear compañias recursivas."
 #. module: product_lot_foundry
 #: model:ir.actions.act_window,name:product_lot_foundry.action_heatcode_all
 #: model:ir.ui.menu,name:product_lot_foundry.menu_action_inventory_heat
+#, fuzzy
 msgid "Heat Codes"
-msgstr ""
+msgstr "Códigos de Temperatura"
 
 #. module: product_lot_foundry
 #: field:stock.production.lot,quality_info:0
 msgid "Quality Information"
-msgstr ""
+msgstr "Información de Calidad"
 
 #. module: product_lot_foundry
 #: field:stock.production.lot,status:0
@@ -128,8 +133,11 @@ msgstr "Ctdad"
 
 #. module: product_lot_foundry
 #: model:ir.module.module,description:product_lot_foundry.module_meta_information
+#, fuzzy
 msgid "Lots management for a metal company: cutting, heatcode, sizes"
 msgstr ""
+"Gestión de lotes para una compañía metalúrgica: corte, código de "
+"temperatura, tamaños"
 
 #. module: product_lot_foundry
 #: field:stock.production.lot,type:0
@@ -146,8 +154,8 @@ msgstr "Líneas de factura"
 msgid ""
 "The Object name must start with x_ and not contain any special character !"
 msgstr ""
-"¡El nombre del objeto debe empezar con x_ y no contener ningún carácter "
-"especial!"
+"¡ El nombre del objeto debe empezar con x_ y no contener ningún carácter "
+"especial !"
 
 #. module: product_lot_foundry
 #: view:sale.order:0
@@ -158,13 +166,14 @@ msgstr "Recrear abastecimiento"
 #: model:ir.model,name:product_lot_foundry.model_product_lot_foundry_heatcode
 #: view:product.lot.foundry.heatcode:0
 #: field:product.lot.foundry.heatcode,name:0
+#, fuzzy
 msgid "Heat Code"
-msgstr ""
+msgstr "Código de Temperatura"
 
 #. module: product_lot_foundry
 #: view:product.lot.foundry.heatcode:0
 msgid "Mechanical Properties"
-msgstr ""
+msgstr "Propiedades Mecánicas"
 
 #. module: product_lot_foundry
 #: view:sale.order:0
@@ -184,6 +193,9 @@ msgid ""
 "consider the present one as void. Do not hesitate to contact our accounting "
 "department"
 msgstr ""
+"Si se ha concretado su pago después del envío de este correo electrónico, "
+"por favor considere el presente como nulo.  No dude en contactar a nuestro "
+"departamento de contabilidad"
 
 #. module: product_lot_foundry
 #: view:sale.order:0
@@ -218,22 +230,23 @@ msgstr "Control inventario"
 #: view:product.lot.foundry.heatcode:0
 #: field:product.lot.foundry.heatcode,chemical_ids:0
 msgid "Chemical Properties"
-msgstr ""
+msgstr "Propiedad Químicas"
 
 #. module: product_lot_foundry
 #: field:product.product,cutting:0
+#, fuzzy
 msgid "Can be Cutted"
-msgstr ""
+msgstr "Puede ser Cortado"
 
 #. module: product_lot_foundry
 #: view:sale.order:0
 msgid "Automatic Reservation"
-msgstr ""
+msgstr "Reservación Automática"
 
 #. module: product_lot_foundry
 #: field:sale.order.line,prodlot_ids:0
 msgid "Lots Assignation"
-msgstr ""
+msgstr "Asignación de Lotes"
 
 #. module: product_lot_foundry
 #: view:sale.order:0
@@ -279,24 +292,25 @@ msgstr "Movimientos de inventario"
 
 #. module: product_lot_foundry
 #: view:product.lot.foundry.heatcode:0
+#, fuzzy
 msgid "Heat code"
-msgstr ""
+msgstr "Código de temperatura"
 
 #. module: product_lot_foundry
 #: constraint:product.product:0
 #: constraint:res.partner:0
 msgid "Error: Invalid EAN,UPC,JPC,GTIN code"
-msgstr ""
+msgstr "Error: Código EAN,UPC,JPC,GTIN inválido"
 
 #. module: product_lot_foundry
 #: field:stock.production.lot,available:0
 msgid "Availables"
-msgstr ""
+msgstr "Disponibles"
 
 #. module: product_lot_foundry
 #: selection:stock.production.lot,type:0
 msgid "Bar"
-msgstr ""
+msgstr "Barra"
 
 #. module: product_lot_foundry
 #: constraint:product.template:0
@@ -328,8 +342,9 @@ msgstr "Pedido de venta"
 
 #. module: product_lot_foundry
 #: field:product.product,auto_picking:0
+#, fuzzy
 msgid "Auto Picking for Production"
-msgstr ""
+msgstr "Recolección Automática para Producción"
 
 #. module: product_lot_foundry
 #: field:product.lot.foundry.heatcode.chemical,value:0
@@ -354,7 +369,7 @@ msgstr "Longitud"
 #. module: product_lot_foundry
 #: model:ir.model,name:product_lot_foundry.model_stock_production_lot_reservation
 msgid "stock.production.lot.reservation"
-msgstr ""
+msgstr "stock.production.lot.reservation"
 
 #. module: product_lot_foundry
 #: field:stock.production.lot.reservation,name:0
@@ -391,12 +406,12 @@ msgstr "Histórico"
 #: help:sale.order.line,prodlot_ids:0
 msgid "Production lot is used to put a serial number on the production"
 msgstr ""
-"Lote de producción se utiliza para poner un número de serie a la producción."
+"Lote de producción se utiliza para poner un número de serie a la producción"
 
 #. module: product_lot_foundry
 #: model:ir.model,name:product_lot_foundry.model_stock_production_lot_all
 msgid "stock.production.lot.all"
-msgstr ""
+msgstr "stock.production.lot.all"
 
 #. module: product_lot_foundry
 #: view:sale.order:0
@@ -438,7 +453,7 @@ msgstr "Líneas del pedido de ventas"
 #: model:ir.model,name:product_lot_foundry.model_product_lot_foundry_heatcode_mecanical
 #: field:product.lot.foundry.heatcode,mecanical_ids:0
 msgid "Mecanical Properties"
-msgstr ""
+msgstr "Propiedades Mecánicas"
 
 #. module: product_lot_foundry
 #: field:sale.order.line,prodlot_id:0
@@ -457,8 +472,9 @@ msgstr "UdM"
 
 #. module: product_lot_foundry
 #: view:sale.order:0
+#, fuzzy
 msgid "Related packings"
-msgstr ""
+msgstr "Paquetes relacionados"
 
 #. module: product_lot_foundry
 #: model:ir.actions.act_window,name:product_lot_foundry.action_heatcode_draft
@@ -473,8 +489,9 @@ msgstr "Pedido de ventas"
 
 #. module: product_lot_foundry
 #: model:product.template,name:product_lot_foundry.product_product_ampco25_product_template
+#, fuzzy
 msgid "Ampco25 Rectangle Bar"
-msgstr ""
+msgstr "Barra Rectangular Ampco25"
 
 #. module: product_lot_foundry
 #: view:sale.order:0

@@ -1,26 +1,24 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* pricelist_per_product
+#	* pricelist_per_product
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-12 10:54+0100\n"
-"PO-Revision-Date: 2016-01-12 11:02+0100\n"
-"Last-Translator: David BEAL <david.beal@akretion.com>\n"
+"POT-Creation-Date: 2017-06-01 04:29+0000\n"
+"PO-Revision-Date: 2017-06-01 04:29+0000\n"
+"Last-Translator: <>\n"
 "Language-Team: \n"
-"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
-"X-Generator: Poedit 1.8.4\n"
 
 #. module: pricelist_per_product
 #: view:product.pricelist.version:pricelist_per_product.product_pricelist_version_form_view
 msgid "Base"
-msgstr "Base"
+msgstr ""
 
 #. module: pricelist_per_product
 #: view:product.pricelist.version:pricelist_per_product.product_pricelist_version_form_view
@@ -28,14 +26,19 @@ msgid "Click to see this product"
 msgstr "Cliquez pour voir les produits"
 
 #. module: pricelist_per_product
+#: field:product.pricelist.item,currency_name:0
+msgid "Currency"
+msgstr ""
+
+#. module: pricelist_per_product
+#: code:addons/pricelist_per_product/pricelist.py:8
 #: help:product.pricelist,price_grid:0
 #: help:product.pricelist.version,price_grid:0
-msgid ""
-"Define if the price list items are filled\n"
+#, python-format
+msgid "Define if the price list items are filled\n"
 "from product form with a grid of specific values\n"
 "for each product"
-msgstr ""
-"Défini si les éléments de liste de prix sont remplis\n"
+msgstr "Défini si les éléments de liste de prix sont remplis\n"
 "depuis le formulaire produit avec une grille spécifique de valeurs\n"
 "pour chaque produit."
 
@@ -45,9 +48,24 @@ msgid "Disc."
 msgstr "Rem."
 
 #. module: pricelist_per_product
+#: field:product.pricelist.item,date_end:0
+msgid "End Date"
+msgstr ""
+
+#. module: pricelist_per_product
+#: help:product.pricelist.item,related_sequence:0
+msgid "Gives the order in which the pricelist items will be checked. The evaluation gives highest priority to lowest sequence and stops as soon as a matching item is found."
+msgstr ""
+
+#. module: pricelist_per_product
 #: view:product.pricelist.version:pricelist_per_product.product_pricelist_version_form_view
 msgid "Grid"
 msgstr "Grille"
+
+#. module: pricelist_per_product
+#: model:product.pricelist.version,name:pricelist_per_product.pricelist_grid_version
+msgid "Grid Version"
+msgstr ""
 
 #. module: pricelist_per_product
 #: field:product.pricelist.version,item_grid_ids:0
@@ -55,9 +73,19 @@ msgid "Item grid ids"
 msgstr "Ids des éléments de grille"
 
 #. module: pricelist_per_product
+#: help:product.pricelist.item,date_end:0
+msgid "Last valid date for the version."
+msgstr ""
+
+#. module: pricelist_per_product
+#: help:product.pricelist.version,tmpl_in_count:0
+msgid "Number of Product Template with this Pricelist version"
+msgstr ""
+
+#. module: pricelist_per_product
 #: model:ir.actions.client,name:pricelist_per_product.action_pricelist_per_product_module_install
 msgid "Open pricelist per product Menu"
-msgstr "Open pricelist per product Menu"
+msgstr ""
 
 #. module: pricelist_per_product
 #: view:product.pricelist.version:pricelist_per_product.product_pricelist_version_form_view
@@ -117,22 +145,25 @@ msgid "Public price"
 msgstr "Prix Publique"
 
 #. module: pricelist_per_product
+#: field:product.pricelist.item,related_sequence:0
+msgid "Sequence"
+msgstr ""
+
+#. module: pricelist_per_product
 #: view:product.pricelist.version:pricelist_per_product.product_pricelist_version_form_view
 msgid "Show Products"
 msgstr "Voir les Produits"
 
 #. module: pricelist_per_product
-#: model:product.pricelist.version,name:pricelist_per_product.pricelist_grid_version
-msgid "Specific market"
-msgstr "Marché spécifique"
+#: field:product.pricelist.version,tmpl_in_count:0
+msgid "Template with this Version"
+msgstr ""
 
 #. module: pricelist_per_product
 #: help:product.template,pricelist_item_ids:0
-msgid ""
-"These prices are defined with absolute values\n"
+msgid "These prices are defined with absolute values\n"
 "(no calculation with discount)"
-msgstr ""
-"Ces prix sont définis en valeurs absolues\n"
+msgstr "Ces prix sont définis en valeurs absolues\n"
 "(pas de calcul avec remise)"
 
 #. module: pricelist_per_product
@@ -144,3 +175,4 @@ msgstr ""
 #: view:product.template:pricelist_per_product.product_template_only_form_view
 msgid "{'invisible': [('pricelist_item_ids', '!=', False)]}"
 msgstr ""
+
