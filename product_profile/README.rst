@@ -37,7 +37,9 @@ Configuration
    then values of these will be populated automatically
    in 'product.template'
    Example of fields declaration in your own module:
-   ```python
+
+```python
+
 class ProductProfile(models.Model):
     """ Require dependency on sale, purchase and point_of_sale modules
     """
@@ -55,20 +57,34 @@ class ProductProfile(models.Model):
     purchase_ok = fields.Boolean(
         string='Can be Purchased')
     available_in_pos = fields.Boolean()
-   ```
+
+```
 
 3. Second behavior: you might want to add a default behavior to these fields:
    in this case use prefix 'profile_default\_' for your field name
    in 'product.profile' model.
-   ```python
+
+```python
+
 class ProductProfile(models.Model):
     ...
     profile_default_categ_id = fields.Many2one(
         'product.category',
         string='Default category')
-   ```
+    profile_default_route_ids = fields.Many2many(
+        'stock.location.route',
+        string=u'Default Routes',
+        domain="[('product_selectable', '=', True)]",
+        help="Depending on the modules installed, this will allow "
+             "you to define the route of the product: "
+             "whether it will be bought, manufactured, MTO/MTS,...")
+
+```
+
    In this case 'categ_id' field (from product.template) is populated
    with 'profile_default_categ_id' value but can be updated manually by the user.
+   Careful: each time you change profile, the default value is also populated
+   whatever the previous value. Custom value is only keep if don't change the profile.
 
 
 4. Insert data (xml or csv) and define values for each field defined above
@@ -81,7 +97,8 @@ Usage
 Assign a value to the profile field in the product template form.
 Then, all fields which depend on this profile will be set to the right value at once.
 
-If you deselect the profile value, all these fields will be reset to empty values.
+If you deselect the profile value, all these fields keep the same value and you can change them manually 
+(back to standard behavior).
 
 Install **Product Profile Example** module to see a use case in action.
 
