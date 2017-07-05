@@ -23,7 +23,13 @@ addon | version | summary
 [product_profile_example](product_profile_example/) | 8.0.1.0.0 | Product Profile Use Case
 [product_sequence](product_sequence/) | 8.0.0.1.0 | Product Sequence
 [product_supplierinfo_for_customer](product_supplierinfo_for_customer/) | 8.0.1.0.0 | Use product supplier info for customers too
+<<<<<<< HEAD
 [product_supplierinfo_tree_price_info](product_supplierinfo_tree_price_info/) | 8.0.1.0 | Supplier Unit Price on Product Form
+=======
+[product_supplierinfo_for_customer_sale](product_supplierinfo_for_customer_sale/) | 8.0.1.0.0 | Product supplier info for customer - sale
+[product_supplierinfo_tree_price_info](product_supplierinfo_tree_price_info/) | 8.0.0.1.0 | Supplier Unit Price on Product Form
+[product_variant_inactive](product_variant_inactive/) | 8.0.0.0.0 | Product Variant Inactive
+>>>>>>> 2c605fc6316d7b7a5648159f4466f151f6be6ac7
 [product_weight](product_weight/) | 8.0.0.2.0 | Allows to calculate products weight from its components.
 
 Unported addons
