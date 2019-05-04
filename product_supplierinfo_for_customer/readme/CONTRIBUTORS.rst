@@ -3,3 +3,4 @@
 * Aaron Henriquez <ahenriquez@eficent.com>
 * Miquel Raïch <miquel.raich@eficent.com>
 * Tecnativa - Sergio Teruel <sergio.teruel@tecnativa.com>
+* Hugo Adan <hugo@vauxoo.com>
