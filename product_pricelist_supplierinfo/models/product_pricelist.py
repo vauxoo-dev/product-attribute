@@ -30,6 +30,9 @@ class ProductPricelist(models.Model):
                         quantity=qty,
                     ), rule.id,
                 )
+                result['rule_seller_%i' % product.id] = (self.env.context.get('seller_selected'), rule.id)
+        print("COMPUTE SUPPLIERINFO")
+        print(result)
         return result
 
 
