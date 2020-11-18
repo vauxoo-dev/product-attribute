@@ -22,6 +22,10 @@ class ProductTemplate(models.Model):
         seller = product._select_seller(quantity=quantity, date=date)
         if seller:
             price = seller._get_supplierinfo_pricelist_price()
+            # Sending by context the seller that was used to get the price
+            new_context = dict(self.env.context)
+            new_context.update({'seller_selected': seller.id})
+            self.env.context = new_context
         if price:
             # We need to convert the price if the pricelist and seller have
             # different currencies so the price have the pricelist currency

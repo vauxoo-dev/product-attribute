@@ -30,6 +30,9 @@ class ProductPricelist(models.Model):
                         quantity=qty,
                     ), rule.id,
                 )
+                # Creating a new key 'rule_seller_%i' (%i == product.id) to send the seller (`product.supplierinfo`)
+                # that was used to obtain the price. It will have (supplierinfo_id, rule_id)
+                result['rule_seller_%i' % product.id] = (product.env.context.get('seller_selected', False), rule.id)
         return result
 
 
