@@ -45,8 +45,8 @@ class ProductProduct(models.Model):
                 lambda s: not s.company_id or s.company_id.id == company_id)
         for seller in sellers:
             if (
-                (not seller.date_start or seller.date_start <= date)
-                and (not seller.date_end or seller.date_end >= date)
+                (not seller.date_start or fields.context_today(seller, seller.date_start) <= date)
+                and (not seller.date_end or fields.context_today(seller, seller.date_end) >= date)
                 and (not partner_id
                      or seller.name in [partner_id, partner_id.parent_id])
                 and (not seller.product_id or seller.product_id == self)
