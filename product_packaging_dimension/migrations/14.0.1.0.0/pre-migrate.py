@@ -5,7 +5,6 @@ from odoo.tools.sql import column_exists, rename_column
 
 
 def migrate(cr, version):
-
     # Rename lngth into packaging_length
     if column_exists(cr, "product_packaging", "packaging_length"):
         cr.execute("UPDATE product_packaging SET packaging_length = lngth")

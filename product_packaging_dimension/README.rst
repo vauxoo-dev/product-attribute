@@ -20,7 +20,7 @@ Product Packaging Dimension
     :target: https://github.com/OCA/product-attribute/tree/17.0/product_packaging_dimension
     :alt: OCA/product-attribute
 .. |badge4| image:: https://img.shields.io/badge/weblate-Translate%20me-F47D42.png
-    :target: https://translation.odoo-community.org/projects/product-attribute-14-0/product-attribute-14-0-product_packaging_dimension
+    :target: https://translation.odoo-community.org/projects/product-attribute-17-0/product-attribute-17-0-product_packaging_dimension
     :alt: Translate me on Weblate
 .. |badge5| image:: https://img.shields.io/badge/runboat-Try%20me-875A7B.png
     :target: https://runboat.odoo-community.org/builds?repo=OCA/product-attribute&target_branch=17.0
@@ -28,8 +28,8 @@ Product Packaging Dimension
 
 |badge1| |badge2| |badge3| |badge4| |badge5|
 
-This module allows to store dimensions (length, width, height), weight and
-volume of product packagings.
+This module allows to store dimensions (length, width, height), weight
+and volume of product packagings.
 
 **Table of contents**
 
@@ -39,7 +39,7 @@ volume of product packagings.
 Known issues / Roadmap
 ======================
 
-* Resolve conflict with delivery module
+-  Resolve conflict with delivery module
 
 Bug Tracker
 ===========
@@ -55,20 +55,20 @@ Credits
 =======
 
 Authors
-~~~~~~~
+-------
 
 * Camptocamp
 * Akretion
 
 Contributors
-~~~~~~~~~~~~
+------------
 
-* Patrick Tombez <patrick.tombez@camptocamp.com>
-* Akim Juillerat <akim.juillerat@camptocamp.com>
-* Kévin Roche <kevin.roche@akretion.com>
+-  Patrick Tombez <patrick.tombez@camptocamp.com>
+-  Akim Juillerat <akim.juillerat@camptocamp.com>
+-  Kévin Roche <kevin.roche@akretion.com>
 
 Maintainers
-~~~~~~~~~~~
+-----------
 
 This module is maintained by the OCA.
 

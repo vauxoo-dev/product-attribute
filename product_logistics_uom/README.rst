@@ -20,7 +20,7 @@ Product logistics UoM
     :target: https://github.com/OCA/product-attribute/tree/17.0/product_logistics_uom
     :alt: OCA/product-attribute
 .. |badge4| image:: https://img.shields.io/badge/weblate-Translate%20me-F47D42.png
-    :target: https://translation.odoo-community.org/projects/product-attribute-14-0/product-attribute-14-0-product_logistics_uom
+    :target: https://translation.odoo-community.org/projects/product-attribute-17-0/product-attribute-17-0-product_logistics_uom
     :alt: Translate me on Weblate
 .. |badge5| image:: https://img.shields.io/badge/runboat-Try%20me-875A7B.png
     :target: https://runboat.odoo-community.org/builds?repo=OCA/product-attribute&target_branch=17.0
@@ -28,13 +28,15 @@ Product logistics UoM
 
 |badge1| |badge2| |badge3| |badge4| |badge5|
 
-This module allows to choose an Unit Of Measure (UoM) for products weight and volume.
-It can be set product per product for users in group_uom.
+This module allows to choose an Unit Of Measure (UoM) for products
+weight and volume. It can be set product per product for users in
+group_uom.
 
-Without this module, you only have the choice between Kg or Lb(s) and m³ for all the products.
+Without this module, you only have the choice between Kg or Lb(s) and m³
+for all the products.
 
-For some business cases, you need to express in more precise UoM than default ones like Liters
-instead of M³.
+For some business cases, you need to express in more precise UoM than
+default ones like Liters instead of M³.
 
 **Table of contents**
 
@@ -46,19 +48,20 @@ Installation
 
 Be aware, that this module only change the UoM but not the value.
 
-It's the same behavior as base Odoo when you change from Metric System to Imperial System.
+It's the same behavior as base Odoo when you change from Metric System
+to Imperial System.
 
 Configuration
 =============
 
 To change the default UoM
 
-#. Go "General Settings", then in "Products"
-#. you have to select a default unit of measure for weights and volumes.
+1. Go "General Settings", then in "Products"
+2. you have to select a default unit of measure for weights and volumes.
 
 To change on a specific product
 
-#. Go the product form you can change the UoM directly.
+1. Go the product form you can change the UoM directly.
 
 Bug Tracker
 ===========
@@ -74,25 +77,25 @@ Credits
 =======
 
 Authors
-~~~~~~~
+-------
 
 * Akretion
 
 Contributors
-~~~~~~~~~~~~
+------------
 
-* Raphaël Reverdy <raphael.reverdy@akretion.com>
+-  Raphaël Reverdy <raphael.reverdy@akretion.com>
 
 Other credits
-~~~~~~~~~~~~~
+-------------
 
 The development of this module has been financially supported by:
 
-* Akretion <https://akretion.com>
-* La Base <https://labase.coop>
+-  Akretion <https://akretion.com>
+-  La Base <https://labase.coop>
 
 Maintainers
-~~~~~~~~~~~
+-----------
 
 This module is maintained by the OCA.
 
