@@ -4,7 +4,7 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 import datetime
 
-from odoo import models
+from odoo import api, models
 from odoo.fields import Domain
 
 
@@ -16,11 +16,19 @@ class ProductProduct(models.Model):
             ProductProduct, self.with_context(customerinfo=True)
         )._compute_display_name()
 
-    def _search_display_name(self, operator, value):
-        domain = super()._search_display_name(operator, value)
+    @api.model
+    def name_search(self, name="", domain=None, operator="ilike", limit=100):
+        res = super().name_search(
+            name=name, domain=domain, operator=operator, limit=limit
+        )
         partner_id = self.env.context.get("partner_id")
-        if not value or not partner_id or operator in Domain.NEGATIVE_OPERATORS:
-            return domain
+        if (
+            not name
+            or not partner_id
+            or operator in Domain.NEGATIVE_OPERATORS
+            or (limit and len(res) >= limit)
+        ):
+            return res
 
         # NOTE: Ideally we could use child_of operator here instead
         # of building top level commercial partner + parent + current contact
@@ -30,13 +38,21 @@ class ProductProduct(models.Model):
             [
                 ("partner_id", "in", partner_ids),
                 "|",
-                ("product_code", operator, value),
-                ("product_name", operator, value),
+                ("product_code", operator, name),
+                ("product_name", operator, name),
             ]
         )
         if not customerinfo:
-            return domain
-        return domain | Domain("product_tmpl_id", "in", customerinfo.product_tmpl_id.ids)
+            return res
+        found_ids = [product_id for product_id, _name in res]
+        extra_products = self.search_fetch(
+            Domain("product_tmpl_id", "in", customerinfo.product_tmpl_id.ids)
+            & Domain("id", "not in", found_ids),
+            ["display_name"],
+            limit=(limit - len(res)) if limit else None,
+        )
+        res += [(product.id, product.display_name) for product in extra_products.sudo()]
+        return res
 
     def _get_price_from_customerinfo(self, partner_id):
         self.ensure_one()
